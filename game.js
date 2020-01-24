@@ -5,7 +5,7 @@ var started = false;
 var level = 0;
 
 //starting game
-$(document).click(function() {
+$(document).keypress(function() {
   if (!started) {
     $("#level-title").text("level " + level);
     nextSequence();
